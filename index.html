@@ -8,11 +8,24 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 	<link href="theme/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 	<link href="theme/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-	<!-- <link href="~/css/shared/views.shared.css" rel="stylesheet" type="text/css" /> -->
+	<link href="assets/plugins/custom/cookiealert/cookiealert.bundle.css" rel="stylesheet" type="text/css"/>
+	<script src="assets/plugins/custom/cookiealert/cookiealert.bundle.js"></script>
 </head>
 
 </html>
 <body id="kt_body" class="bg-body">
+
+	<!--begin::Cookie alert-->
+	<div class="d-flex d-lg-block flex-column bg-dark text-light text-center rounded-0 cookiealert py-5">
+		Here's an example of a cookie alert pop up from the bottom of the screen.
+		Click the "Agree" button to accept the cookie.
+		<a href="#">Learn more</a>
+
+		<button type="button" class="btn btn-primary d-inline mx-auto ms-lg-5 acceptcookies mt-5 mt-lg-0">
+			I agree
+		</button>
+	</div>
+<!--end::Cookie alert-->
 
 	<div class="d-flex flex-column flex-root">
 
@@ -47,7 +60,7 @@
 					<i class="fas fa-cookie text-primary fs-3x me-5"></i>
 					<div class="d-flex flex-column pe-0 pe-sm-10">
 						<h5 class="mb-1">Este site usa cookies.</h5>
-						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inceptos imperdiet magna! Sed fusce fames tempus litora venenatis. Ac aliquet leo hendrerit taciti viverra? Nisl suscipit potenti accumsan quis ipsum purus cursus. Suspendisse ultrices morbi in purus lectus dictum porta; Commodo penatibus nec.</span>
+						<span>Nosso website coleta informações do seu dispositivo e da sua navegação por meio de cookies para mensurar a audiência do website. Para mais informações, acesse a nossa <a href="#">Política de Cookies</a> e a nossa <a href="#">Política de Privacidade</a>.</span>
 					</div>
 					<button type="button" id="btn_aceitarcookie" class="btn btn-primary fw-bolder w-15 my-lg-4" data-bs-dismiss="alert">
 						Aceitar
