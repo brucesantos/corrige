@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>:: Login - Demandas Judiciais ::</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="theme/assets/media/logos/fgv.ico" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+	<link href="theme/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="theme/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="~/css/shared/views.shared.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="kt_body" class="bg-body">
+
+	<div class="d-flex flex-column flex-root">
+
+		<div id="kt_page" class="d-flex flex-column flex-lg-row flex-column-fluid">
+
+			<div class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative bg-dark">
+
+				<div class="d-flex flex-column position-xl-fixed top-0 bottom-0 w-xl-600px scroll-y">
+
+					<div class="d-flex flex-row-fluid flex-column text-center p-10 pt-lg-20 mt-sm-20">
+
+						<a href="#" class="py-25 mb-3">
+							<img alt="Logo" src="theme/assets/media/logos/fgv-logo.png" class="h-55px" />
+						</a>
+
+						<a href="#" class="py-25 mt-sm-20">
+							<img alt="Logo" src="theme/assets/media/logos/logo-judicial-white.png" class="h-150px" />
+							<h1 class="text-white py-5">Demandas Judiciais</h1>
+						</a>
+
+					</div>
+
+					<div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-100px min-h-lg-300px" style="background-image: url(theme/assets/media/logos/login.png"></div>
+
+				</div>
+
+			</div>
+
+			<div class="d-flex flex-column flex-lg-row-fluid py-10">
+
+				<div class="alert bg-light-primary border border-primary d-flex flex-column flex-sm-row w-80 p-25 mx-xxl-16">
+					<i class="fas fa-cookie text-primary fs-3x me-5"></i>
+					<div class="d-flex flex-column pe-0 pe-sm-10">
+						<h5 class="mb-1">Este site usa cookies.</h5>
+						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inceptos imperdiet magna! Sed fusce fames tempus litora venenatis. Ac aliquet leo hendrerit taciti viverra? Nisl suscipit potenti accumsan quis ipsum purus cursus. Suspendisse ultrices morbi in purus lectus dictum porta; Commodo penatibus nec.</span>
+					</div>
+					<button type="button" id="btn_aceitarcookie" class="btn btn-primary fw-bolder w-15 my-lg-4" data-bs-dismiss="alert">
+						Aceitar
+					</button>
+				</div>
+
+				<div class="d-flex flex-center flex-column flex-column-fluid">
+
+					<div class="w-lg-500px p-10 p-lg-15 mx-auto">
+
+						<form id="form_login" class="form w-100">
+
+							<div class="mb-10">
+								<h1 class="text-center text-dark mb-3">Demandas Judiciais</h1>
+							</div>
+
+							<div class="fv-row mb-5">
+								<label class="form-label fs-6 fw-bolder text-dark">CPF</label>
+								<div class="input-group mb-5">
+									<input type="text" id="usuario" name="usuario" class="form-control form-control-lg mask_cpf" autocomplete="off" />
+									<span class="input-group-text">
+										<i class="bi bi-person-fill fs-2"></i>
+									</span>
+								</div>
+							</div>
+
+							<div class="fv-row mb-5">
+								<div class="d-flex flex-stack mb-2">
+									<label class="form-label fw-bolder text-dark fs-6">Senha</label>
+									<a id="btn_esquecisenha" href="#" class="link-primary fs-6 fw-bolder">Esqueceu sua senha?</a>
+								</div>
+
+								<div class="input-group mb-5">
+									<input type="password" id="senha" name="senha" class="form-control" autocomplete="off" />
+									<span class="input-group-text showPassword" passwordId="senha">
+										<i class="bi bi-eye-slash fs-2 cursor-pointer"></i>
+									</span>
+								</div>
+							</div>
+
+							<div class="text-center">
+								<button id="btn_logar" type="button" class="btn btn-primary fw-bolder w-100 mb-10">
+									Entrar
+								</button>
+							</div>
+
+							<div class="d-flex align-items-center mb-10">
+								<div class="border-bottom border-gray-300 mw-50 w-100"></div>
+								<div class="border-bottom border-gray-300 mw-50 w-100"></div>
+							</div>
+
+							<div class="text-muted text-center">Desenvolvido por <img src="theme/assets/media/logos/fgv-logo.png" style="height: 18px;"></div>
+
+						</form>
+
+						<form id="form_esquecisenha" class="form w-100 d-none">
+
+							<div class="mb-5">
+								<h1 class="text-dark mb-3">Esqueceu sua senha?</h1>
+							</div>
+
+							<div class="mb-10">
+								<label class="form-label text-dark fs-6">Enviaremos um e-mail de recuperação de sua senha para o e-mail associado ao seu CPF.</label>
+							</div>
+
+							<div class="fv-row mb-5">
+								<div class="d-flex flex-stack mb-2">
+									<label class="form-label fw-bolder text-dark fs-6">CPF</label>
+									<a id="btn_voltarlogin" href="#" class="link-primary fs-6 fw-bolder">Logar?</a>
+								</div>
+								<div class="input-group mb-5">
+									<input type="text" id="usuario_esquecisenha" name="usuario_esquecisenha" class="form-control form-control-lg mask_cpf" autocomplete="off" />
+									<span class="input-group-text">
+										<i class="bi bi-person-fill fs-2"></i>
+									</span>
+								</div>
+							</div>
+
+							<div class="text-center">
+								<button type="button" id="btn_gerartoken" class="btn btn-primary fw-bolder w-100 mb-10">
+									Enviar E-mail
+								</button>
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+
+				<div class="d-flex flex-center flex-wrap fs-6 p-5 pb-0">
+					<div class="d-flex flex-center fw-bold fs-6 text-muted">
+						CopyrightⒸ 2022 Fundação Getúlio Vargas. Todos direitos reservados
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="modal_termosigilo" class="modal fade" tabindex="-1">
+		<div class="modal-dialog modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Termo de sigilo, compromisso e confidencialidade</h5>
+
+					<!--begin::Close-->
+					<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+						<span class="svg-icon svg-icon-2x"></span>
+					</div>
+					<!--end::Close-->
+				</div>
+
+				<div class="modal-body" data-scroll="true" data-height="300">
+					<p>O presente Termo de Uso tem por finalidade normatizar o uso da Plataforma Digital para Soluções de Conflito oferecida pela FGV Conhecimento. Ao usar tal sistema, o usuário está ciente de que estará sujeito às regras aplicáveis a ele. Ao acessar a plataforma, o usuário assume que leu e concordou com a versão mais recente do Termo e se vincula, automática e irrevogavelmente, às regras nele contidas.</p>
+					<p>Ao utilizar a Plataforma Digital para Soluções de Conflito, o usuário adere aos seguintes termos e condições mencionadas a seguir:</p>
+					<ol>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Sobre o serviço</span>
+							<ol>
+								<li>A Plataforma Digital para Soluções de Conflito é um serviço do Poder Judiciário para a realização de negociações diretas, facilitação por terceiro (mediação e conciliação pré-processuais, bem como mediação e conciliação processuais) pela internet ou por outro meio de comunicação que permita a transação à distância.</li>
+								<li>Trata-se de uma plataforma tecnológica de informação, interação e compartilhamento de dados, monitorada pela FGV Conhecimento que viabiliza a solução adequada de conflitos por meio da internet. Esta é uma iniciativa inserida no bojo do projeto de digitalização de Justiça, que auxilia a interlocução direta entre os litigantes e fornece ao Estado informações essenciais à elaboração e à implementação de políticas públicas de acesso à justiça que visem a prevenção e a solução da sobrecarga de demandas no Judiciário.</li>
+							</ol>
+						</li>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Definições</span>
+							<ol>
+								<li>
+									Para fins deste instrumento considera-se:
+									<ol type="a">
+										<li>Usuário: qualquer pessoa que utilize os recursos do site com um perfil cadastrado - partes e advogados -, ou sem cadastro apenas para pesquisa e informação;</li>
+										<li>Plataforma: ambiente virtual da Plataforma Digital para Soluções de Conflito que viabiliza a utilização dos serviços oferecidos;</li>
+										<li>Requerimento: encaminhamento de demanda para a negociação, mediação ou conciliação pela plataforma.</li>
+										<li>Requerente: parte autora do requerimento;</li>
+										<li>Requerido: parte contrária do requerimento;</li>
+										<li>Pedido: a solicitação expressa pelo requerente no seu requerimento;</li>
+										<li>Dados cadastrais: dados pessoais fornecidos pelos usuários para realização do cadastro (exemplo: nome completo, CPF, CEP, data de nascimento, email, etc);</li>
+										<li>Dados de terceiros: dados pessoais não relacionados ao requerimento registrado, ou ainda quaisquer outros de titularidade de terceiros que estejam protegidos por sigilo e/ou direitos autorais;</li>
+										<li>Informação pública: informações não individualizadas e nem sigilosas, cuja divulgação seja possibilitada por meio do site como os comentários finais dos usuários sobre a plataforma e informações estatísticas relacionados, por exemplo, aos assuntos mais demandados, percentual de acordo por tipo de demanda etc.); e</li>
+										<li>Informação sigilosa: dados pessoais ou qualquer outra informação cujo caráter sigiloso derive da lei ou de decisões proferidas por órgão administrativo e/ou judicial.</li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Cadastro e segurança</span>
+							<ol>
+								<li>Todo usuário que utilizar o serviço é responsável pela guarda segura e pela confidencialidade da sua senha, além de ser inteiramente responsável por toda e qualquer atividade, lançamento e registro de informações que ocorram sob o uso da mesma, inclusive para efeitos legais.</li>
+								<li>O usuário concorda em notificar imediatamente à FGV Conhecimento sobre qualquer uso não autorizado da sua senha ou qualquer quebra de segurança de que tome conhecimento.</li>
+								<li>A FGV Conhecimento não será responsável por qualquer perda que possa ocorrer como consequência do uso não-autorizado por terceiros de sua senha, com ou sem seu conhecimento.</li>
+								<li>
+									Para proteger o sigilo de sua senha, recomenda-se ao usuário:
+									<ol type="a">
+										<li>sair de sua conta ao final de cada sessão e assegurar que a mesma não seja acessada por terceiros não autorizados; e,</li>
+										<li>não informar sua senha, nem mesmo à FGV Conhecimento, por e-mail, telefone ou outros meios.</li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Das modalidades de serviço</span>
+							<ol>
+								<li>
+									A Plataforma Digital para Soluções de Conflito disponibiliza os seguintes serviços:
+									<ol type="a">
+										<li>Encaminhamento de requerimentos, nas modalidades processual e pré-processual pelos tribunais.</li>
+										<li>Consultas aos dados e informações coletados a partir dos atendimentos registrados na plataforma, com exceção de dados pessoais e sigilosos.</li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Da utilização do site</span>
+							<ol>
+								<li>
+									O acesso à Plataforma Digital para Soluções de Conflito disponibiliza aos usuários os seguintes serviços:
+									<ol type="a">
+										<li>Registrar requerimentos;</li>
+										<li>Acompanhar o andamento dos requerimentos;</li>
+										<li>Interagir com o requerido ao longo do prazo estabelecido por meio de canal especialmente criado para que as informações complementares possam ser inseridas, com objetivo de obter uma resolução ágil da demanda;</li>
+									</ol>
+								</li>
+							</ol>
+							<p>Observação: a realização de consultas a relatórios e estatísticas divulgados pelo site é aberta à qualquer pessoa, independentemente da finalidade do uso da informação, não sendo necessário o cadastramento como usuário.</p>
+						</li>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Dos deveres do usuário da plataforma:</span>
+							<ol>
+								<li>
+									O usuário deverá:
+									<ol>
+										<li>Realizar cadastro com informações pessoais de forma fidedigna, sob pena de exclusão do cadastro;</li>
+										<li>Guardar os dados necessários (CPF/Login e senha) para acesso a seu ambiente restrito;</li>
+										<li>Manter atualizados seus dados pessoais;</li>
+										<li>Registrar reclamação em seu próprio nome e, em caso de representação legal de pessoa física ou mandato conferido por procuração, o cadastro deve ser realizado em nome da parte, apresentando-se na plataforma a documentação específica para tal representação realizar cadastro, em caso de reclamação de MEI, em nome do responsável e deverá ser apresentado o certificado de condição de microempreendedor individual.</li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Das proibições ao usuário</span>
+							<ol>
+								<li>
+									O usuário do site não poderá:
+									<ol>
+										<li>Inserir no sistema informações falsas e/ou errôneas; usar endereços de computadores, de rede ou de correio eletrônico falsos; empregar informações parcialmente ou inteiramente falsas, ou ainda informações cuja procedência não possa ser verificada;</li>
+										<li>Utilizar os serviços da plataforma para fins diversos das finalidades do site;</li>
+										<li>Utilizar, no campo destinado aos anexos, arquivos com vírus de computador, com conteúdo invasivo, destrutivo ou que cause dano temporário ou permanente nos equipamentos do requerido e/ou da plataforma, ou ainda materiais protegidos por propriedade intelectual ou sigilo comercial, excetuando-se os casos em que o realizador do carregamento seja o próprio detentor destes direitos;</li>
+										<li>Nos campos destinados ao preenchimento de textos, utilizar-se de termos ou materiais ilegais, agressivos, caluniosos, abusivos, difamatórios, obscenos, invasivos à privacidade de terceiros, que atentem contra os bons costumes, a moral ou ainda que contrariem a ordem pública;</li>
+										<li>Realizar cadastro ou requerimento utilizando dados ou identificando-se como terceiro sem autorização deste último;</li>
+										<li>Alterar, excluir e/ou corromper dados e informações do site com o simples intuito de dificultar ou obstruir o registro e/ou solução da demanda;</li>
+										<li>Difamar, abusar, assediar, perseguir, ameaçar ou violar quaisquer direitos individuais (como a privacidade dos usuários do sistema);</li>
+										<li>Postar ou transmitir requerimentos em duplicidade sobre o mesmo fato;</li>
+										<li>Realizar requerimento sem as devidas representação e assistência caso seja incapaz civilmente, anexando os documentos que as atestem. Já nos casos de outorga de procuração ou MEI, deverão ser anexados os documentos que comprovem os devidos poderes.</li>
+									</ol>
+								</li>
+							</ol>
+							<p>Observação: A prática de alguma das condutas acima listadas pode implicar o cancelamento do requerimento e/ou do cadastro do usuário, bem como a responsabilização nos termos da legislação aplicável.</p>
+						</li>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Da Política de Uso de Dados</span>
+							<ol>
+								<li>Para saber mais, acesse a <a href="/Portal/Privacidade">Política de Uso de Dados Pessoais</a></li>
+							</ol>
+						</li>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Da responsabilidade do gestor</span>
+							<ol>
+								<li>A FGV Conhecimento é a responsável pela gestão, disponibilização e manutenção do site da plataforma, bem como pela articulação com demais órgãos e entidades do Poder Judiciário que, por meio de cooperação técnica, apoiam e atuam na consecução dos objetivos do serviço.</li>
+							</ol>
+							<p>A criação desta plataforma foi prevista na Resolução XXXXX DE XXX.</p>
+						</li>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Das penalidades</span>
+							<ol>
+								<li>O descumprimento às condições, termos e observações deste instrumento dará  à FGV Conhecimento, gestor do sistema, o direito de editar, cancelar, suspender, excluir e/ou desativar o cadastro ou a informação empregada pelo usuário, de forma temporária ou definitiva, ao seu único e exclusivo critério, sem prejuízo das cominações legais pertinentes.</li>
+							</ol>
+						</li>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Da modificação dos Termos de Uso</span>
+							<ol>
+								<li>À FGV Conhecimento se reserva o direito de modificar estes termos e condições a qualquer tempo, observando a comunicação ampla e prévia desta alteração aos usuários do site.</li>
+							</ol>
+						</li>
+						<li>
+							<span class="font-weight-bolder mt-5 mb-2 d-inline-block">Disposições Finais</span>
+							<ol>
+								<li>A Plataforma Digital para Soluções de Conflito é um serviço de utilidade pública.</li>
+								<li>O presente termo vigorará por tempo indeterminado ou durante o período em que o sistema estiver disponível via <em>internet</em>.</li>
+								<li>À FGV Conhecimento se reserva o direito de modificar estes termos e condições a qualquer tempo, observando a comunicação ampla e prévia desta alteração aos usuários do site.</li>
+							</ol>
+						</li>
+					</ol>
+				</div>
+
+				<div class="modal-footer  d-flex flex-row justify-content-between align-items-center">
+					<button class="btn btn-light" data-bs-dismiss="modal"><i class="far fa-times-circle"></i> Fechar</button>
+					<button id="btn_aceitartermo" class="btn btn-primary">Li e Aceito os Termos <i class="far fa-check-circle ms-1"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="theme/assets/js/scripts.bundle.js"></script>
+	<script src="theme/assets/plugins/global/plugins.bundle.js"></script>
+
+	<script src="js/shared/views.shared.js"></script>
+	<script src="js/shared/custom/validation/validation.pt-br.js"></script>
+	<script src="js/login/index.js"></script>
+
+</body>
+
+</html>
